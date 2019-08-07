@@ -56,3 +56,31 @@ exponentialRuntime([1, 2, 3, 4, 5]); // 25 pairs logged
 // should try to avoid because the runtime get's exponential
 
 // Big O Notation: O (n^2)
+
+
+
+
+
+// logarithmic runtime
+
+const binarySearch = (array, key) => {
+  let low = 0;
+  let high = array.length - 1;
+  let mid;
+  let element;
+
+  while (low <= high) {
+    mid = Math.floor((low + high) / 2, 10);
+    element = array[mid];
+    if(element < key) {
+      low = mid + 1;
+    } else if ( element > key) {
+      high = mid - 1;
+    } else {
+      return mid;
+    }
+  }
+  return -1;
+};
+
+// Big O Notation: O (log n)
