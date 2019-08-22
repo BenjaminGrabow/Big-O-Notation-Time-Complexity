@@ -8,18 +8,18 @@
 
 
 
-Complexity of Common Operations 
+// Complexity of Common Operations 
 
-Complexity       Operation
-____________________________________________________
-O(1)            |Running statement
+// Complexity       Operation
+// ____________________________________________________
+// O(1)            |Running statement
 
-O(1)            |Value look-up on an array, object, variable
+// O(1)            |Value look-up on an array, object, variable
 
-O(logn)         |Loop that cuts problem in half every iteration
+// O(logn)         |Loop that cuts problem in half every iteration
 
-O(n)            |Looping through the values of an array
+// O(n)            |Looping through the values of an array
 
-O(n^2)          |Double nested loops
+// O(n^2)          |Double nested loops
 
-O(n^3)          |triple nested loops
+// O(n^3)          |triple nested loops
