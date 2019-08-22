@@ -18,4 +18,19 @@ const isUnique = arr => {
 
 // better to use caching :
 
+const isUnique = arr => {
+  caching = {}
+  let result = true;
 
+  for (let i = 0; i < arr.length; i++) {
+    if(caching[arr[i]]) {
+      result = false;
+    } else {
+      caching[arr[i]] = true;
+    }
+  }
+
+  return result;
+};
+
+// Time complexity is now only O(n) => we need only one loop
